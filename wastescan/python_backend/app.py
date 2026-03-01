@@ -7,10 +7,10 @@ import json
 
 app = Flask(__name__)
 
-# Initialize the Roboflow client
+# Initialize the Roboflow client - Use environment variable for API key
 CLIENT = InferenceHTTPClient(
     api_url="https://detect.roboflow.com",
-    api_key="Uih1px5V5tb93au696tC"
+    api_key=os.environ.get('ROBOFLOW_API_KEY', 'Uih1px5V5tb93au696tC')  # Fallback to your key
 )
 
 @app.route('/predict', methods=['POST'])
@@ -106,5 +106,8 @@ def health():
 if __name__ == '__main__':
     print("Starting Waste Classification Server...")
     print("Model: waste-classification-uwqfy/1")
-    print("Server running on http://0.0.0.0:5000")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Use PORT environment variable for Render
+    port = int(os.environ.get('PORT', 5000))
+    print(f"Server running on port {port}")
+    # Set debug=False for production
+    app.run(host='0.0.0.0', port=port, debug=False)
