@@ -1,0 +1,30 @@
+[
+    {
+      "questionText": "What is the primary cause of global warming?",
+      "answers": [
+        {"text": "Deforestation", "score": 0},
+        {"text": "Burning fossil fuels", "score": 1},
+        {"text": "Overpopulation", "score": 0},
+        {"text": "Industrial waste", "score": 0}
+      ]
+    },
+    {
+      "questionText": "Which gas is most responsible for the greenhouse effect?",
+      "answers": [
+        {"text": "Oxygen", "score": 0},
+        {"text": "Carbon dioxide", "score": 1},
+        {"text": "Nitrogen", "score": 0},
+        {"text": "Methane", "score": 0}
+      ]
+    },
+    {
+      "questionText": "Which of the following is a renewable source of energy?",
+      "answers": [
+        {"text": "Coal", "score": 0},
+        {"text": "Solar power", "score": 1},
+        {"text": "Natural gas", "score": 0},
+        {"text": "Nuclear energy", "score": 0}
+      ]
+    }
+  ]
+  

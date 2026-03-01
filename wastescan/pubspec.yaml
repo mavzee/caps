@@ -1,0 +1,28 @@
+name: wastescan
+description: "A Flutter app for waste scanning and classification."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+  image_picker: ^0.8.7+4
+  fluttertoast: ^8.2.2
+  provider: ^6.0.0
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/questions.json
