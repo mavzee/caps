@@ -26,10 +26,11 @@ class _CamPageState extends State<CamPage> {
   final TextEditingController _manualInputController = TextEditingController();
   
   // Test different IP addresses - uncomment the one that works
-   final String _serverUrl = 'http://192.168.1.33:5000/predict'; // Your current IP
+  // final String _serverUrl = 'http://192.168.1.33:5000/predict'; // Your current IP
    // final String _serverUrl = 'http://10.0.2.2:5000/predict'; // Android emulator
   // final String _serverUrl = 'http://127.0.0.1:5000/predict'; // iOS simulator
   // final String _serverUrl = 'http://localhost:5000/predict'; // General
+  final String _serverUrl = 'https://ecoquest-api.onrender.com/predict';
 
   final Map<String, Map<String, dynamic>> _wasteInfo = {
     'plastic': {
