@@ -1224,7 +1224,7 @@ You can manually enter what type of waste you think this is. Our system will pro
           BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Learn'),
           BottomNavigationBarItem(icon: Icon(Icons.lightbulb), label: 'Quiz'),
           BottomNavigationBarItem(icon: Icon(Icons.camera_alt), label: 'Scan'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.green[700],
